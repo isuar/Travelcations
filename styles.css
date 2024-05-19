@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;  /* Make sure HTML and body cover the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  /* This makes sure the footer stays at the bottom */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    margin: 0;  /* Ensure no default margin is applied */
+    padding: 0; /* Ensure no default padding is applied */
+    flex: 1;  /* Allows body to expand and fill available space */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a, .signin {
+    color: white;
+    text-decoration: none;
+}
+
+.search-area {
+    text-align: center;
+    padding: 20px;
+}
+
+.search-options button {
+    margin: 10px;
+    padding: 10px;
+    background: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.promotional-section {
+    text-align: center;
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    color: white;
+    padding: 50px 20px;
+}
+
+.promotional-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.promotional-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.promo-image {
+    margin: 20px auto;
+    width: 50%; /* Adjust size as necessary */
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-image img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
